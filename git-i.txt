@@ -1,1 +1,292 @@
 This is git file
+IntelliPaat
+Linux Commands
+(Basics + Advance)
+Contact us: support@intellipaat.com / © Copyright Intellipaat / All rights reserved
+IntelliPaat
+Linux Certification Training
+1. clear: To clear the terminal
+2. mkdir <dir_name>: To make directories (folders)
+3. ls: To list your directories and files.
+4. ls -R: List all the directories and files as well as the subdirectories.
+5. ls -a: To list all the directories.(hidden as well)
+6. ls -s: To list the block of memory occupied by the directories.
+7. ll: To list all the directories with detailed information.
+8. ls -al: T o list all the directories including (hidden) with detailed information.
+9. mkdir <folder_name1> <folder_name2>: To create multiple folders at the same time.
+10. mkdir -p <folder_name>/<sub_folder_name>/<sub_folder_name>: To create directories
+and subdirectories at the same time. [-p stands for parent : it creates the resource if
+something is not present from before]
+11. cd <directory_name>: CD stands for change directory and it will open the directory or folder.
+12. cd <directory_name>/<subdirectory>/<multi-subdirectory_name>: To move to a
+directory.
+13. cd ..: To come out of directory(folder).
+14. cd: to move to home directory.
+15. cd ../../.. : To come out of multiple directories
+16. touch <file_name>: to create an empty file.
+17. nano <file_name>: To create and add the conent in the file in nano editor.
+18. ctrl + s: To save the changes.
+19. ctrl + x: to exit the nano editor.
+20. nano <file_name>: To edit a file (if it is alreay present)
+21. vi <file_name>: To create a file using vi editor.
+Contact us: support@intellipaat.com / © Copyright Intellipaat / All rights reserved
+IntelliPaat
+Linux Certification Training
+first, you need to press 'i' button to enter into insert mode to make changes to your file. To
+save the file you first need to come out of the insert mode by pressing 'esc' button.
+Then to save your file you need to run the below command:
+':w': to save
+':q': to exit
+':wq': To save and exit
+':wq!': to forcefully save and exit from Vi editor.
+22. echo “Hello” >> file1.txt: To append new file content in a file.
+23. cat <file_name>: To see the content of the file.
+24. cat <file_name1> <filename_2> >> <final_file>: To concatenate the content of two files into
+a single file.
+25. cat <file_name> > <file_name2>: To replace the content of the file2 with the content of file1.
+>>: will append and save the changes
+>: will replace the content and save the changes.
+26. pwd: Will show you your present working directory.
+27. history: will show you the history of the terminal.
+28. rm <file_name>: To delete the file.
+29. rmdir <foder_name>: to remove empty directory.
+30. rm -r <dir_name>: To delete non-empty directories.
+31. cp <file_name> <dir_name>: to copy the file to a target directory
+32. cp <file_name> <dir_name>/<sub_dir>: To copy files from one
+33. cp -r <dir_name> <target_dir>: To copy your directory.
+34. cp -r <dir_name> <target_dir>/<target_sub_dir>: To copy dir to target sub dir.
+35. cp -pr <pathofthefile> <targetfolder>: To copy files from one directory to another.
+Contact us: support@intellipaat.com / © Copyright Intellipaat / All rights reserved
+IntelliPaat
+Linux Certification Training
+36. mv <file_name> <dir_name>: To move your file to any directory.
+37. mv <file_name> <dir/sub_dir>: To move a file to sub directory.
+38. mv <dir_name> <target_dir>: to move a dir to target dir.
+39. mv <file_name> <new_file_name>: To rename a file.
+40. mv <dir_name> <new_dir_name>: To rename a directory.
+41. head <file_name>: To get top 10 lines of files.
+42. head -n 5 <file_name>: To get top 5 lines of file as output.
+43. head -5 <file_name>: To get top 5 lines of file as output.
+44. tail <file_name>: To get last 10 line of file as output.
+45. tail -5 <file_name>: To get last 5 lines of file as output.
+46. stat <filename>: To get information about the files.
+47. grep <keyword> <file_name>: To search for a keyword in a file.
+48. grep -r <keyword> <directory>: To search for a keyword in a directory.
+49. grep -c -w -i <keyword> <file_name>:
+-c : To count the output.
+-w : To get the output of exact matches
+-i : case insesitive
+-o : to get the matches
+-v : To invert the search
+Search for files and directories based on various criteria.
+50. find /path/to/search -name "*.txt"
+51. Find / -name “*.txt” : To Search from any of the disk
+52. sed -i 's/word/replacewith/' <filename> : To find and replace a word in a file
+53. Df -hT path/of/the/file : To get to know the disk on which it is stored
+54. sudo su: To become a root user.
+Contact us: support@intellipaat.com / © Copyright Intellipaat / All rights reserved
+IntelliPaat
+Linux Certification Training
+55. exit: to come out the root user.
+56. curl https://intellipaat.com: This should display the content of the URL on the terminal.
+57. sudo apt update: To update the packages.
+58. wget image-url: Download files from the web.
+59. In recent versions of Linux distributions, the netstat command has been replaced by the ss
+(Socket Statistics) command, which provides similar functionality with improved performance.
+The ss command should be available on most modern Linux distributions.
+*Use the ss command to display listening ports:
+ss -tuln
+-t: Display TCP sockets.
+-u: Display UDP sockets.
+-l: Display listening sockets.
+-n: Show numerical addresses instead of resolving hostnames.
+If you specifically need to use the netstat command, you might have to install it
+60. sudo apt-get install net-tools
+61. ifconfig: View and configure network interfaces.
+62. ping example.com: Send ICMP echo requests to a network host
+63. sudo apt upgrade: To update and install the packages.
+64. sudo apt install <package_name>: To install any package.
+65. which <package_name>: To get the location of the package.
+66. <package_name> -v: To check the version of it.
+67. sudo service <package_name> status: To check the status of a package.
+68. sudo service <package_name> stop: To stop the service.
+69. sudo service <package_name> start: To start the service.
+70. systemctl start service_name: Control the systemd system and service manager.
+Contact us: support@intellipaat.com / © Copyright Intellipaat / All rights reserved
+IntelliPaat
+Linux Certification Training
+71. sudo apt autoremove <package_name> -y: To uninstall a package.
+72. sudo apt purge <package_name>: Deleting Packages
+(sudo dpkg –configure -a)
+73. This command stands for "process status" and is used to display information about running
+processes.
+ps: List running processes.
+aux: These are options that modify the behavior of the ps command:
+-a: Shows processes from all users.
+-u: Displays detailed information about the processes.
+-x: Includes processes that are not attached to a terminal.
+74. top: Monitor system processes and resource usage.
+75. kill: Terminate processes.
+kill process_id
+76. reboot: Restart the system.
+77. shutdown now
+78. uname: Display system information.
+79. uname -a
+80. df -h: Reportfile system disk space usage.
+81. du -sh directoryname/: Estimate file and directory space usage.
+-s: This option tells du to display only the total size of the specified file or directory, rather
+than showing the sizes of individual files within the directory.
+-h: This option tells du to display the size in a human-readable format, using units like KB,
+MB, GB, etc., to make it easier to understand.
+82. free -h: Display memory usage.
+83. whoami: Displays current user
+Contact us: support@intellipaat.com / © Copyright Intellipaat / All rights reserved
+IntelliPaat
+Linux Certification Training
+84. adduser new_user: Create a new user account.
+85. sudo userdel username: To delete a user.
+86. cut -d: -f1 /etc/passwd | sort | uniq: To list all the users
+It extracts the usernames from the /etc/passwd file.
+It sorts the extracted usernames in alphabetical order.
+It filters out any duplicate usernames, leaving only unique usernames.
+87. usermod: This is the command itself, used to modify user account properties.
+-aG: These are options that modify the behavior of the usermod command:
+-a: This option is used to add the user to a group without removing them from other groups.
+-G: This option is followed by a list of groups to which the user should be added.
+88. group: This is the name of the group to which you want to add the user.
+89. user: This is the name of the user whose group membership you want to modify.
+90. userdel: Delete a user account.
+userdel username
+91. addgroup: Create a new group (friendlier interface than groupadd).
+92. addgroup new_groupname
+93. delgroup: Delete a group (friendlier interface than groupdel).
+94. delgroup groupname_to_delete
+95. passwd username: Change user password.
+96. /etc : Diretory which have all the config file
+97. w: to check the current users that are logged in.
+98. hostname: will print the host name in the terminal.
+99. uname -a: To get the details of the os.
+100. ps: list the running process.
+101. ps -a: To get all the processes.
+Contact us: support@intellipaat.com / © Copyright Intellipaat / All rights reserved
+IntelliPaat
+Linux Certification Training
+102. gzip <filename>: To zip a file.
+103. gunzip <filename>: To unzip a file.
+104. sudo apt install zip:To install zip
+zip: Create ZIP archives.
+zip archive.zip file1.txt file2.txt
+unzip: Extract files from ZIP archives.
+unzip archive.zip
+105. tar -czvf archive.tar.gz file1.txt file2.txt directory/
+106. zcat <filename>: To read the content of zipped file.
+Extras:
+yum: Package manager for installing, updating, and removing software packages.
+dnf: Successor to yum, used for package management in newer versions of RHEL.
+uname: Display system information.
+hostname: Display or set system hostname.
+useradd: Add a new user.
+usermod: Modify user account properties.
+userdel: Delete a user account.
+groupadd: Add a new group.
+groupmod: Modify group properties.
+groupdel: Delete a group.
+passwd: Change user password.
+ps: Display information about active processes.
+kill: Terminate a process.
+Contact us: support@intellipaat.com / © Copyright Intellipaat / All rights reserved
+IntelliPaat
+Linux Certification Training
+top: Display and update sorted information about system processes.
+htop: Interactive process viewer.
+ifconfig: Configure and display network interfaces.
+ip: Network configuration tool (replaces ifconfig).
+netstat: Display network connections, routing tables, and interface statistics.
+firewalld: Dynamic firewall manager.
+iptables: Legacy tool for managing packet filtering rules.
+systemctl: Control the systemd system and service manager.
+journalctl: Query and display messages from the journal.
+systemd: System and service manager.
+df: Display disk space usage.
+du: Estimate file space usage.
+mount: Mount a file system.
+umount: Unmount a file system.
+fdisk: Partition table manipulator for disks.
+chkconfig: System tool to configure services.
+systemctl start: Start a systemd service.
+systemctl stop: Stop a systemd service.
+systemctl restart: Restart a systemd service.
+systemctl status: Display the status of a systemd service.
+chkconfig: Tool for querying and updating runlevel information.
+find: Search for files in a directory hierarchy.
+grep: Search for a pattern in files.
+sed: Stream editor for filtering and transforming text.
+awk: Pattern scanning and processing language.
+Contact us: support@intellipaat.com / © Copyright Intellipaat / All rights reserved
+IntelliPaat
+Linux Certification Training
+tar: Tape archiver, used for compression and archiving.
+gzip: Compress or decompress files.
+zip: Package and compress files.
+unzip: Extract files from a ZIP archive.
+curl: Command-line tool for transferring data with URLs.
+wget: Retrieve files from the internet using HTTP or FTP.
+lsblk: List block devices, their mount points, and file system types.
+df: Display file system disk space usage.
+du: Estimate file space usage.
+ps aux: Display detailed information about all processes.
+chown: Change file owner and group.
+chmod: Change file permissions.
+chgrp: Change group ownership of files.
+find: Search for files and directories based on various criteria.
+uptime: Display how long the system has been running.
+last: Show a list of last logged in users.
+history: Display the command history.
+scp: Securely copy files between hosts using SSH.
+rsync: Remote file and directory synchronization.
+journalctl -xe: Display detailed information from the journal with additional context.
+nmcli: Command-line client for NetworkManager.
+route: Display or manipulate the IP routing table.
+traceroute: Print the route packets take to network host.
+nslookup: Query Internet name servers interactively.
+hostnamectl: Query and change the system hostname and related settings.
+Contact us: support@intellipaat.com / © Copyright Intellipaat / All rights reserved
+IntelliPaat
+Linux Certification Training
+lsof: List open files and the processes that opened them.
+ldconfig: Configure dynamic linker run-time bindings.
+ldd: Print shared library dependencies.
+modinfo: Show information about a Linux Kernel module.
+modprobe: Load or unload Kernel modules.
+lsmod: Display the status of loaded Kernel modules.
+journalctl --disk-usage: Display disk usage statistics for the journal.
+nmcli connection show: Show details of NetworkManager connections.
+curl: Transfer data from or to a server using supported protocols.
+wget: Retrieve files from the web using HTTP, HTTPS, or FTP.
+ps aux --forest: Display a process tree.
+scp: Copy files securely between hosts on a network.
+usermod -aG: Add user to supplementary group(s).
+who: Display who is logged in.
+ip link: Display or manipulate routing, devices, policy routing, and tunnels.
+free: Display amount of free and used memory in the system.
+strace: Trace system calls and signals.
+systemctl enable: Enable a systemd service to start on boot.
+systemctl disable: Disable a systemd service from starting on boot.
+nmcli dev show: Show details about network devices.
+uptime: Display the current time, how long the system has been running, the number of users, and
+system load averages.
+ip route: Show or manipulate routing table.
+ip addr: Show or manipulate address and link status.
+dd: Convert and copy files.
+Contact us: support@intellipaat.com / © Copyright Intellipaat / All rights reserved
+IntelliPaat
+Linux Certification Training
+ldd: Print shared library dependencies.
+mkfs: Build a Linux file system.
+journalctl -b: Display messages from the journal since the last boot.
+ss: Utility to investigate sockets.
+journalctl -n: Display the last n lines of the journal.
+nmcli con up: Activate a NetworkManager connection.
+systemctl reload: Reload the configuration of a systemd service.
+—---------------------------------------------------------------------
+Contact us: support@intellipaat.com / © Copyright Intellipaat / All rights reserved
